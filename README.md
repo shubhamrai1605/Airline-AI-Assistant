@@ -38,18 +38,18 @@ It can:
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Clone the Repository
+### Clone the Repository
 
 git clone https://github.com/shubhamrai1605/Airline-AI-Assistant.git
 cd Airline-AI-Assistant
 
-### 3️⃣ Add OpenAI API Key
+### Add OpenAI API Key
 
 Create a .env file:
 
 OPENAI_API_KEY=your_api_key_here
 
-### 4️⃣  Run the App
+### Run the App
 python main.py
 
 It will launch a local Gradio interface.
@@ -76,10 +76,10 @@ Destination image is generated.
 
 ### 💰 Example Cities & Prices
 City	Price ($)
-London	799
-Paris	899
-Tokyo	1420
-Sydney	2999
+London	799, 
+Paris	899, 
+Tokyo	1420, 
+Sydney	2999 
 
 ### 📌 Future Improvements
 
@@ -95,7 +95,7 @@ Streaming responses
 
 ### 👨‍💻 Author
 
-Shubham Rai
+Shubham Rai: 
 AI Developer, LLM Engineer
 
 ### ⭐ If You Like This Project
