@@ -87,11 +87,10 @@ def chat(history):
 
     voice = talker(reply)
 
-    # if cities:
-    #     image = artist(cities[0])
+    if cities:
+        image = artist(cities[0])
     
-    # return history, voice, image
-    return history, voice
+    return history, voice, image
 
 def talker(message):
     response = openai.audio.speech.create(
@@ -130,7 +129,7 @@ with gr.Blocks() as ui:
 # Hooking up events to callbacks
 
     message.submit(put_message_in_chatbot, inputs=[message, chatbot], outputs=[message, chatbot]).then(
-        chat, inputs=chatbot, outputs=[chatbot, audio_output]
+        chat, inputs=chatbot, outputs=[chatbot, audio_output, image_output]
     )
 
 ui.launch(inbrowser=True)
