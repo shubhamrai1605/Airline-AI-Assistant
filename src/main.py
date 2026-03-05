@@ -117,7 +117,7 @@ def put_message_in_chatbot(message, history):
 
 # UI definition
 
-with gr.Blocks() as ui:
+with gr.Blocks(theme=gr.themes.Default()) as ui:
     with gr.Row():
         chatbot = gr.Chatbot(height=500)
         image_output = gr.Image(height=500, interactive=False)
